@@ -1,9 +1,11 @@
 class Shortener
+  attr_reader :url
+
   def initialize(url)
     @url = url
   end
 
   def look_up
-    Digest::SHA256.hexdigest(@url)[0..6]
+    Digest::SHA256.hexdigest(url)[0..6]
   end
 end
