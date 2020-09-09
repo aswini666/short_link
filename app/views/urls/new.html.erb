@@ -1,0 +1,31 @@
+<div class = "cointainer px-4 ml-5 mt-3">
+  <div class="btn btn-primary float-right"> 
+    <%= link_to "Back", root_path, :class => "btn" %>
+  </div> 
+</div>
+
+
+<div class="container">
+  <div class="p-5">
+    <div class="card">
+      <div class="card-body">
+        <%= form_with model: @url, remote: true do |form| %>
+        <h5><div class="card-title">Enter a URL to be shorten </h5>
+          <%= form.text_field :original_url, class: "form-control", placeholder: "Enter url ---" %>
+          <%= form.submit 'Shorten Url', class: "btn btn-primary mt-2" %>
+        <% end %>
+      </div>
+      <div id="short-link">
+       </div>
+    </div>
+  </div> 
+</div>
+
+
+
+
+
+
+
+
+
