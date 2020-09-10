@@ -19,6 +19,6 @@ class Shortener
 
   private
   def get_code
-    SecureRandom.uuid[0..6]
+    SecureRandom.uuid[0..4]
   end
 end

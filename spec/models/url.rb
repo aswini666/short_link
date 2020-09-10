@@ -31,12 +31,4 @@ RSpec.describe Url, type: :model do
     url2.save
     expect(url2.valid?).to be(false)
   end
-
-  it "is valid if it has  original url and look up" do
-    url = Url.new{
-      original_url = "https://www.facebook.com/demo/articles/12344",
-      look_up = "1234567"
-    }
-    expect(url.valid?).to be(true)
-  end
 end

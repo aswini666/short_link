@@ -5,20 +5,14 @@ application up and running.
 
 Things you may want to cover:
 
-* Ruby version
+* Ruby version: 2.6.3
 
-* System dependencies
+* Rails Version: 6.0.3.2
 
-* Configuration
+* Run rake db:seed
 
-* Database creation
+* How to run the application: localhost:3000
 
-* Database initialization
+* How to run the test suite :  bundle exec rspec spec/services/shortener.rb
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* To run the test for model : bundle exec rspec spec/models/url_spec.rb

@@ -1,10 +1,10 @@
 require "rails_helper"
 
 RSpec.describe Shortener do
-  it "shortens the given url up to 7 characters" do
+  it "shortens the given url up to 5 characters" do
     url = "https://www.favouritewebsite.com/how-to-do-things/demo"
     shortening = Shortener.new(url)
-    expect(shortening.look_up.length).to eq(7)
+    expect(shortening.look_up.length).to eq(5)
   end
   
   it "expects every shortening has its own look_up" do
