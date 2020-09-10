@@ -1,6 +1,7 @@
 # README
 
 This README would normally document whatever steps are necessary to get the
+
 application up and running.
 
 Things you may want to cover:
@@ -11,7 +12,14 @@ Things you may want to cover:
 
 * Run rake db:seed
 
-* How to run the application: localhost:3000
+* How to run the application:
+    
+    1. rails db:migrate
+
+    2. rails db:seed
+
+    3. localhost:3000
+
 
 * How to run the test suite :  bundle exec rspec spec/services/shortener.rb
 
